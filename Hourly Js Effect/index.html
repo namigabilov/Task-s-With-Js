@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Welcome</title>
+</head>
+<body>
+
+    <div id="img">
+        <img id="sun" src="Photos/Sun.png" alt="">
+
+    </div>
+    <div id="img2">
+        <img id="moon" src="Photos/Moon.png" alt="">
+    </div>
+    <div id="mode">
+        <div onclick="changeModeDark()" id="light">
+            <i  class="fa-regular fa-sun"></i>
+        </div>
+        <div onclick="changeModeLight()" id="dark">
+            <i class="fa-solid fa-moon"></i>
+
+        </div>
+    </div>
+    <!-- <div id="toggle">
+        <div onclick="mode()" id="circle">
+
+        </div>
+    </div> -->
+    <div id="circleArea">
+        <span class="text">Verilmis Radiuslu Cevrenin Sahesini Hesablamaq :</span><br>
+        <input type="number" name="" id="radius" placeholder="Radiusu Daxil Edin !"><br>
+        <button id="btn" onclick="calcArea()">Hesabla </button><br>
+        <span class="text" >Sahe = </span>
+        <span  class="text" id="Result"></span>
+    </div>
+    <script src="Js/app.js"></script>
+</body>
+</html>
