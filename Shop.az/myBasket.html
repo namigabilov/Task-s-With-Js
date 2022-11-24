@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Css/bootstrap.css">
+        <link rel="stylesheet" href="Css/style.css">
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+            integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="header">
+                    <a href="index.html">Shop.az</a>
+                    <div class="basket">
+                        <a href="myBasket.html">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </a>
+                        <span id="count">0</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section>
+            <div class="container">
+                <div style="text-align: center" id="emptyBasket" class="mt-5">
+                    <h1 class="mb-5" >Your Basket Is Empty</h1>
+                    <a style="padding: 14px 60px; background-color:blue;color: white;border-radius: 10px" href="index.html">Start Shopping</a>
+                </div>
+                <table class="table ">
+                        <thead>
+                            <tr>
+                                <th scope="col">Id</th>
+                                <th scope="col">Image</th>
+                                <th scope="col">Product Name</th>
+                                <th scope="col">Count</th>
+                                <th scope="col">Value</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody">
+                            <th scope="row">1</th>
+                            <td>Larry</td>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                        </tbody>
+                </table>
+    </div>
+</section>
+<script src="Js/app.js"></script>
+<script src="Js/basket.js"></script>
+</body>
+</html>
