@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/SARS-CoV-2_without_background.png/1020px-SARS-CoV-2_without_background.png">
+    <link rel="stylesheet" href="Css/style.css">
+    <title>Covid-19</title>
+</head>
+<body id="body">
+    
+    <header>
+        <div class="container">
+           <div class="header-all">
+            <div class="logo">
+                <a href="index.html"><img src="https://www.coronaviruspreventionnetwork.org/_nuxt/img/_150dpi__CoVPN-HORIZ-whitebg.3e54fc2.png" alt=""></a>
+            </div>
+            <nav>
+                <div class="desktop">
+                    <a href="">About</a>
+                    <a href="warningCountry.html">Warning Countries</a>
+                    <a href="">What is Covid-19</a>
+                </div>
+                <div id="mobile">
+                    <i id="bars" class="fa-solid fa-bars"></i>
+                    <i id="x" class="fa-solid fa-x d-none"></i>
+                </div>
+                <div id="dropDownMenu" class="d-none">
+                    <div class="box">
+                        <a href="">About</a><br><hr>
+                        <a href="warningCountry.html">Warning  Countries</a><hr>
+                        <a href="">What Is Covid-19</a>
+                    </div>
+                </div>
+            </nav>
+           </div>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <div class="all row py-3">
+                <div class="text col-lg-6 text-start my-auto">
+                    <h1 class="text-dark pb-1">Coronavirus disease (COVID-19)</h1>
+                    <p class="text-muted ">Most people infected with the virus will experience mild to moderate respiratory illness and recover without requiring special treatment. However, some will become seriously ill and require medical attention. Older people and those with underlying medical conditions like cardiovascular disease, diabetes, chronic respiratory disease, or cancer are more likely to develop serious illness. Anyone can get sick with COVID-19 and become seriously ill or die at any age. </p>
+                </div>
+                <div class="img col-lg-6 col-12 mt-5">
+                    <img
+                        class="w-100 img-fluid "
+                        src="Picture/symptoms-covid-19.png"
+                        alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="covid">
+            <div class="container">
+                <div class="covid-all">
+                    <h1 class="w-100 py-5" style="text-align: center;">Current covid-19 infection statistics</h1>
+                    <input onkeyup="getInpVal()" class="w-100 form-control" placeholder="Search Some Countries... " type="text" name="" id="inpVal">
+                    <h1 id="salam"></h1>
+                    <h1 class="my-4" style="text-align: center;">Covid-19 Statistics in <span id="whichCountry">World</span></h1>
+                    <h3 class="my-5" style="text-align: center;">These are the statistics as of <span id="refleshTime"></span></h3>
+                    <div class="info">
+                        <div class="left">
+                            <h2>Active Case</h2>
+                            <h4 id="activeCase"></h4>
+                            <h2>New Cases</h2>
+                            <h4 id="newCase"></h4>
+                            <h2>New Deaths</h2>
+                            <h4 id="newDeath"></h4>
+                          </div>
+                          <div class="right">
+                            <h2>Total Case</h2>
+                            <h4  id="totalCase"></h4>
+                            <h2>Total Deaths</h2>
+                            <h4 id="totalDeaths"></h4>
+                            <h2>Total Recovered</h2>
+                            <h4 id="totalRecovered"></h4>
+                          </div>
+                    </div>
+                 
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class= "bg-white">
+        <div class="container">
+            <div class="text-center my-5">
+                <h1 class="fw-bold">Covid-19</h1>
+                <p class="fs-4 w-100 mx-auto ">Coronavirus disease (COVID-19) is an infectious disease caused by the SARS-CoV-2 virus.</p>
+            </div>
+           <div class="cards row">
+            <div class="col-lg-4 col-sm-6 col-12 my-5">
+                <div class="card">
+                    <img src="Picture/belgium-strategic-dialogue.tmb-479v.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <button class="btn btn-primary fs-6 py-0 px-1 rounded-5 my-3  " >News</button>
+                      <h5 class="card-title">9 November 2022</h5>
+                      <p class="card-text fs-5">Belgium and WHO pursue tighter collaboration in a day of strategic dialogue</p>
+                        <div class="info d-flex">
+                            <img id="picture" class="w-10 h-10 rounded-circle" src="Picture/download.jpg" alt="">
+                           <div class="text ms-3">
+                            <h5>Elimmemed Elimmemmedov</h5>
+                            <p>March 2,2022 1 min read</p>
+                           </div>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 col-12 my-5">
+                <div class="card ">
+                    <img src="Picture/coronavirus-2.tmb-479v.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <button class="btn btn-primary fs-6 py-0 px-1 rounded-5 my-3  " >News</button>
+                      <h5 class="card-title">27 October 2022</h5>
+                      <p class="card-text fs-5">TAG-VE statement on Omicron sublineages BQ.1 and XBB</p>
+                        <div class="info d-flex">
+                            <img id="picture" class="w-10 h-10 rounded-circle" src="Picture/download (1).jpg" alt="">
+                           <div class="text ms-3">
+                            <h5>Kelly Rowan</h5>
+                            <p>March 12,2022 6 min read</p>
+                           </div>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 col-12 my-5">
+                <div class="card">
+                    <img src="Picture/hand-sanitizer-covid-19-1920x1280.tmb-1920v.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <button class="btn btn-primary fs-6 py-0 px-1 rounded-5 my-3  " >News</button>
+                      <h5 class="card-title">21 October 2022</h5>
+                      <p class="card-text fs-5">World Health Organization (WHO) response to the External...</p>
+                        <div class="info d-flex">
+                            <img id="picture" class=" h-10 rounded-circle" src="Picture/image3.jpg" alt="">
+                             <div class="text ms-3">
+                            <h5>Ehmed Memmedov</h5>
+                            <p>March 17,2022 40 min read</p>
+                           </div>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+       <div class="container footer">
+            <div class="copyright">
+                <h3>Copyright © Your Website <span id="date"></span></h3>
+            </div>
+            <div class="icons">
+                <a href="https://www.instagram.com/namig.abiloff/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+       </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="Js/app.js"></script>
+</body>
+</html>

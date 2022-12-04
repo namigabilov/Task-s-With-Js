@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   }
+   header{
+       padding: 1rem 0;
+       background-color: aqua;
+   }
+   a{
+       text-decoration: none;
+   }
+   .header-all{
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       
+   }
+   .header-all .logo{
+       width: 20% ;
+   }
+   .header-all .logo img{
+       width: 100%;
+       cursor: pointer;
+   }
+   .header-all nav a{
+       margin-left: 25px;
+       color: black;
+       font-weight: 600;
+       font-size: 20px;
+       transition: .5s;
+   }
+   .header-all #mobile{
+       position: relative;
+   }
+   .header-all #mobile i{
+       cursor: pointer;
+       font-size: 30px;
+       padding-right:20px ;
+   }
+   .header-all #mobile i:nth-child(2){
+       position: absolute;
+       top: -15px;
+       right: 0px;
+   }
+   .header-all nav a:hover{
+       color: white;
+   }
+   .box{
+       border-radius: 15px;
+       background-color: rgba(0, 255, 255, 0.196);
+       position: absolute;
+       right: 16px;
+       top: 77px;
+       text-align: left;
+       height: 170px;
+   }
+   .box a{
+       font-size: 10px;
+       font-weight: 200;
+   }
+   
+   @media (max-width: 576px){
+       .header-all .desktop{
+           display: none ;
+       }
+       .header-all #mobile{
+           display: block ;
+       }
+       .header-all .logo{
+           width: 35%;
+       }
+   }
+   @media (min-width:576px) {
+       .header-all .desktop{
+           display: block ;
+       }
+       .header-all #mobile{
+           display: none ;
+       }
+   }
